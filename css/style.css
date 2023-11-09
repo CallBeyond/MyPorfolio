@@ -1,0 +1,65 @@
+/* Reset some default styles for better consistency */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header img {
+    width: 150px; /* Adjust the size as needed */
+    /* Give round edges to photo */
+    border-radius: 20%; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+}
+
+nav li {
+    margin: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin: 20px 0;
+}
+
+/* Customize the appearance of your work items */
+.work-item {
+    text-align: center;
+    margin: 20px;
+}
+
+.work-item img {
+    max-width: 25%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Add more CSS styles as needed for your design */
