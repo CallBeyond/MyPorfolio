@@ -7,7 +7,7 @@
 
 /* Set the background-color of the entire page */
 body {
-	background-color: #ffffff;
+	background-color: #dbd6d6;
     font-family: Arial, sans-serif;
 }
 
@@ -32,6 +32,7 @@ header img {
     /* Give round edges to photo */
     border-radius: 20%; 
     justify-content: center;
+    display: flex;
 }
 
 nav ul {
@@ -92,8 +93,17 @@ h2 {
     border-radius: 5px;
 }
 
-/* Center text in contact me section */
 footer {
-    text-align: center;
+    display: flex;
+    justify-content: center; /* Center the items horizontally */
+    align-items: center; /* Center the items vertically */
+    background-color: #101315; /* Optional background color for the footer */
+    color: #fff; /* Text color for the footer */
+    padding: 10px; /* Optional padding for the footer */
 }
-/* ! ADD A FOOTER CSS */
+
+#contact ul {
+    list-style: none;
+    display: flex;
+    gap: 50px; /* Adjust the gap as needed */
+}
