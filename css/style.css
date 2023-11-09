@@ -1,19 +1,25 @@
-/* Reset some default styles for better consistency */
-body, h1, h2, h3, p {
-    margin: 0;
+/* Global reset of padding and margin */
+* {
+	box-sizing: border-box;
     padding: 0;
+    margin: 0;
 }
 
-/* Apply basic styling */
+/* Set the background-color of the entire page */
 body {
+	background-color: #ffffff;
     font-family: Arial, sans-serif;
 }
 
+
 header {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
     padding: 20px;
+    background-color: #101315;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 header h1 {
@@ -21,9 +27,10 @@ header h1 {
 }
 
 header img {
-    width: 150px; /* Adjust the size as needed */
+    width: 205px; /* Adjust the size as needed */
     /* Give round edges to photo */
     border-radius: 20%; 
+    justify-content: center;
 }
 
 nav ul {
@@ -50,16 +57,22 @@ section {
     margin: 20px 0;
 }
 
+/* Add flex properties to the container */
+.work-items-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+}
+
 /* Customize the appearance of your work items */
 .work-item {
     text-align: center;
     margin: 20px;
+    flex: 1; /* Distribute items evenly within the container */
 }
 
 .work-item img {
-    max-width: 25%;
+    max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
-
-/* Add more CSS styles as needed for your design */
