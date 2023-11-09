@@ -24,6 +24,7 @@ header {
 
 header h1 {
     font-size: 2em;
+    padding: 20px;
 }
 
 header img {
@@ -51,17 +52,23 @@ nav a {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
 section {
     margin: 20px 0;
 }
 
-/* Add flex properties to the container */
-.work-items-container {
-    display: flex;
-    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
-    justify-content: center; /* Center items horizontally */
+/* added h2 to center the headers in the body */
+h2 {
+    text-align: center;
+    padding: 5px;
+}
+
+/* Adjusts the text in the about me paragraph */
+.aboutme {
+    text-align: justify;
 }
 
 /* Customize the appearance of your work items */
@@ -71,8 +78,22 @@ section {
     flex: 1; /* Distribute items evenly within the container */
 }
 
+/* Add flex properties to the container */
+.work-items-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center items horizontally */
+}
+
+
 .work-item img {
     max-width: 100%;
     border: 1px solid #ddd;
     border-radius: 5px;
 }
+
+/* Center text in contact me section */
+footer {
+    text-align: center;
+}
+/* ! ADD A FOOTER CSS */
